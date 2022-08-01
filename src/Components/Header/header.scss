@@ -1,0 +1,33 @@
+.header {
+  .top-section {
+    display: flex;
+    align-items: end;
+    span {
+      text-align: left;
+      width: 50%;
+    }
+    img {
+      width: 80px;
+    }
+  }
+  nav {
+    border-top: 1px solid #2e3192;
+    color: #2e3192;
+    border-bottom: 3px solid #ed1b24;
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin-bottom: 0;
+      li {
+        padding: 5px 20px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      li:hover{
+        background-color:#2e3192 ;
+        color: white;
+      }
+    }
+  }
+}
