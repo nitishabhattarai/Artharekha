@@ -3,21 +3,21 @@ import NepaliDate from "nepali-date-converter";
 import HamBurger from "../../assets/images/hamburger.svg";
 import "./header.scss";
 
-  var NepaliWords = require('nep-eng');
+var NepaliWords = require("nep-eng");
 
 const HeaderComponent = () => {
   const [currentDate, setCurrentDate] = useState(
     new NepaliDate().toLocaleString()
   );
-  const s = NepaliWords.translate('currentDate')
-useEffect(()=>{
- 
-
-},[])
+  const s = NepaliWords.translate("currentDate");
+  console.log("s", s);
+  useEffect(() => {}, []);
   return (
     <div className="header">
+        <div className="social-icons">
+          
+        </div>
       <div className="top-section container">
-        {s}
         <span>{currentDate}</span> <img src="/logo.jpg" alt="logo" />
       </div>
       <nav>
