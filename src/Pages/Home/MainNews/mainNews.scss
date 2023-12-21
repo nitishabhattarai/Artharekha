@@ -1,0 +1,27 @@
+.mains{
+    border: 1px solid var(--border);
+    background: var(--section-bg);
+    padding: 1rem;
+    .title{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        margin: 20px 0 10px 0;
+    }
+    .main-titles{
+        padding: 10px 0;
+        a{
+            color: black;
+        }
+        a:hover{
+            color: var(--primary);
+            transition: all 1s ease-in;
+        }
+    }
+    .main-titles:not(:last-child){
+        border-bottom: 1px solid var(--border);
+    }
+}

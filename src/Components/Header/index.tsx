@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import {format} from 'date-fns';
+
 import "./header.scss"
 
+
 const HeaderComponent = () => {
- const [currentDate, setCurrentDate]= useState(Date().toLocaleString()) 
   return (
     <div className="header">
-      <div className="top-section container"> <span>{currentDate}</span> <img src="/logo.jpg" alt="logo"/></div>
+      <div className="top-section container"> <span>{format(new Date(), 'dd MMMM yyyy eeee')}</span> <img src="/logo.jpg" alt="logo"/></div>
 
       <nav>
         <ul>
