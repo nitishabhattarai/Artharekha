@@ -1,13 +1,13 @@
 import React from "react";
-import headline from "../../../Assets/images/headline.jpg";
+import headline from "../../../assets/images/headline.jpg";
 import "./mainNews.scss";
-import { Headlines } from "../../../Constants";
+import { headlines } from "../../../Constants";
 const MainNews = () => {
   return (
     <div className="mains">
-      <div className="title">मुख्य समाचार</div>
+      <div className="section-title">मुख्य समाचार</div>
       <img src={headline} alt="headline" />
-      {Headlines.map((headline: string, key: number) => (
+      {headlines.map((headline: string, key: number) => (
         <div
           key={key}
           className={`main-titles ${key === 0 ? "large-font" : "title-font"}`}

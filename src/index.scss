@@ -1,22 +1,45 @@
-:root{
-  --primary: #bf2f2b;
-  --border:#d5d5d5;
-  --section-bg: #00000008;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root{
+    --primary: #bf2f2b;
+    --border:#d5d5d5;
+    --section-bg: #00000008;
+  }
+  .large-font{
+    font-size: 20px;
+  }
+  .main-title{
+    @apply text-[32px];
+    }
+  .title-font{
+    @apply text-[17px];
+  }
+  .main-container{
+    padding: 30px 40px;
+  }
+  .container{
+    padding: 10px 40px;
+  }
+  .padding-r-l{
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .section-title{
+    font-size: 20px;
+    color: var(--primary);
 }
-.large-font{
-  font-size: 20px;
+.recent-news-title{
+  @apply text-xl;
 }
-.title-font{
-  font-size: 18px;
+a{
+color: #000 !important;
+}
+a:hover{
+  color: var(--primary) !important;
+  transition: all 1s ease-in;
+}
 }
 
-.main-container{
-  padding: 30px 40px;
-}
-.container{
-  padding: 10px 40px;
-}
-.padding-r-l{
-  padding-left: 45px;
-  padding-right: 45px;
-}

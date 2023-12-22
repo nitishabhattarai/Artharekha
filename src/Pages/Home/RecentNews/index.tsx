@@ -1,12 +1,35 @@
-import React from 'react'
-import './recentNews.scss'
+import React from "react";
+import "./recentNews.scss";
+import { recentNews } from "../../../Constants";
 
 const RecentNews = () => {
   return (
     <div>
-        
-    </div>
-  )
-}
+      <div className="section-title mb-2">भर्खरका समाचार</div>
+      <hr className="line" color="#d5d5d5" />
 
-export default RecentNews
+      {recentNews.map(
+        (news: { src: string; title: string; time: string }, key) => (
+          <div
+            key={key}
+            className="flex gap-4 py-5 border-solid border-0 border-b border-b-border last:border-b-0 recent-news"
+          >
+            <div className="flex w-1/3 justify-center">
+              <img
+                src={news.src}
+                className="w-full object-contain"
+                alt="recent-news"
+              />
+            </div>
+            <div className="w-2/3">
+              <div className="recent-news-title">{news.title}</div>
+              <div className="posted-time">{news.time}</div>
+            </div>
+          </div>
+        )
+      )}
+    </div>
+  );
+};
+
+export default RecentNews;
