@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@400;500&display=swap');
+
 @layer base{
   :root{
     --primary: #bf2f2b;
@@ -40,6 +42,21 @@ color: #000 !important;
 a:hover{
   color: var(--primary) !important;
   transition: all 1s ease-in;
+}
+.btn {
+  @apply px-4 pt-1 flex items-center cursor-pointer rounded-md font-[hind] text-[17px] text-center;
+}
+.btn-small {
+  @apply py-1;
+}
+.btn-medium {
+  @apply py-2;
+}
+.btn-outline{
+  @apply bg-transparent border border-solid border-secondary text-secondary hover:text-primary hover:border-primary; 
+}
+.ad-square{
+  @apply border border-solid w-full h-1/4;
 }
 }
 
