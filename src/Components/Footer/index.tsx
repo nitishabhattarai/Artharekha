@@ -5,14 +5,15 @@ import {
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
+import { logo } from "../../assets/images";
 
 const FooterComponent = () => {
   return (
-    <div className="py-4 border-0 border-t-4 border-solid border-primary footer">
+    <div className="w-full py-4 border-0 border-t-4 border-solid border-primary footer">
       <div className="grid grid-cols-3 gap-10 px-32">
         <div className="flex flex-col border-0 border-r border-solid border-border details">
           <div className="flex flex-col items-center w-[8rem] logo">
-            <img src="./logo.jpg" className="w-16" alt="logo" />
+           <a href="/"><img src={logo} className="w-16" alt="logo" /> </a>
             <span className="mt-5 text-3xl font-bold text-primary">
               अर्थरेखा
             </span>

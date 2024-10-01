@@ -2,16 +2,16 @@
   .top-section {
     display: flex;
     align-items: end;
-    span {
-      text-align: left;
-      width: 50%;
-    }
+    // span {
+    //   text-align: left;
+    //   width: 50%;
+    // }
     img {
       width: 80px;
     }
   }
   nav {
-    border-top: 1px solid #2e3192;
+    border-top: 1px solid var(--secondary-blue);
     color: #2e3192;
     border-bottom: 3px solid var(--primary);
     ul {
@@ -21,8 +21,9 @@
       margin-bottom: 0;
       li {
         padding: 5px 20px;
-        font-size: 24px;
+        font-size: 20px;
         cursor: pointer;
+        color: #2e3192;
       }
       li:hover{
         background-color:#2e3192 ;

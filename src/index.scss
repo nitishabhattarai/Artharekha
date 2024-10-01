@@ -9,6 +9,7 @@
     --primary: #ed1b24;
     --border:#d5d5d5;
     --section-bg: #00000008;
+    --secondary-blue: #2e3192;
   }
   .large-font{
     font-size: 20px;
@@ -19,15 +20,14 @@
   .title-font{
     @apply text-[17px];
   }
+  .news-title{
+    @apply text-4xl;
+  }
   .main-container{
-    padding: 30px 40px;
+    @apply px-[75px] py-[30px];
   }
   .container{
     padding: 10px 40px;
-  }
-  .padding-r-l{
-    padding-left: 45px;
-    padding-right: 45px;
   }
   .section-title{
     font-size: 20px;
@@ -57,6 +57,13 @@ a:hover{
 }
 .ad-square{
   @apply border border-solid w-full h-1/4;
+}
+.ad{
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 }
 

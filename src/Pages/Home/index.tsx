@@ -8,14 +8,14 @@ import Banking from './Banking/index';
 const Home = () => {
   return (
     <div className="home-page main-container">
-      <div className="ad mb-5"> Ad</div>
+      <div className="mb-5 ad"> Ad</div>
       <div className="ad">Google Ad</div>
-      <div className="padding-r-l gap-10 home-content">
+      <div className="gap-10 home-content">
         <div className="w-1/4 headlines">
           <MainNews />
         </div>
         <div className="w-2/4 highlighted-news">
-          <div className="pb-10 border-solid border-b border-border border-0 text-center">
+          <div className="pb-10 text-center border-0 border-b border-solid border-border">
             <img src={img1} className="w-full" alt="highlight" />
             <h1 className="mt-3.5 main-title">
               <a href="">
@@ -32,11 +32,11 @@ const Home = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-10 other-highlights">
-            <div className="mt-5 pl-5 border-solid border-0 border-r border-border">
+            <div className="pl-5 mt-5 border-0 border-r border-solid border-border">
               <a href="" className="title-font">
                 जब अन्तरिक्षको टमाटर हरायो
               </a>
-              <div className="author mt-2">
+              <div className="mt-2 author">
                 <a className="!text-author" href="">
                   नागरिक
                 </a>
@@ -48,7 +48,7 @@ const Home = () => {
               <a href="" className="title-font">
                 किन स्वतन्त्र पत्रकारिता ?
               </a>
-              <div className="author mt-2">
+              <div className="mt-2 author">
                 <a className="!text-author" href="">
                   प्रेम लामिछाने
                 </a>
@@ -63,8 +63,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="ad mb-5 mt-10"> Ad</div>
-      <div className="ad mb-5"> Ad</div>
+      <div className="mt-10 mb-5 ad"> Ad</div>
+      <div className="mb-5 ad"> Ad</div>
       <InvestmentNews />
       <Banking/>
     </div>

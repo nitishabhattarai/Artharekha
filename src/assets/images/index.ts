@@ -7,6 +7,7 @@ import recent5 from "./recent5.jpg";
 import shareBtn from "./share.svg";
 import saveBtn from "./save.svg";
 import clockIcon from "./clock.svg";
+import logo from "./logo.jpg";
 
 export {
   img1,
@@ -18,4 +19,5 @@ export {
   shareBtn,
   saveBtn,
   clockIcon,
+  logo
 };

@@ -11,7 +11,9 @@ module.exports = {
         secondary:'#525252',
         'section-bg': '#00000008',
         border:'#d5d5d5',
-        author:'#7b5a5a'
+        author:'#7b5a5a',
+        'secondary-blue':'#2e3192',
+        newsStory: "#444444"
       }
     },
   },
